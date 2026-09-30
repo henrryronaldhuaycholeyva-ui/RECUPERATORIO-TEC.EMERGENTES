@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 30px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #f3f5f3;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #263238;
+}
+
+.contenedor {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 20px;
+    padding: 24px;
+    background-color: white;
+    border: 1px solid #e5e8e6;
+    border-radius: 10px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+}
+
+h1 {
+    margin: 0 0 20px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 25px;
+    color: #263238;
+}
+
+#formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+input {
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid #dfe4e2;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #287b68;
+    box-shadow: 0 0 0 2px rgba(40, 123, 104, 0.12);
+}
+
+button {
+    width: fit-content;
+    padding: 10px 17px;
+    border: none;
+    border-radius: 6px;
+    background-color: #287b68;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #206454;
+}
+
+.buscador {
+    margin-top: 18px;
+}
+
+.lista-contactos {
+    list-style: none;
+    margin: 15px 0 0;
+    padding: 0;
+}
+
+.contacto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+    padding: 13px;
+    border: 1px solid #e5e8e6;
+    border-radius: 7px;
+    background-color: #fbfcfb;
+}
+
+.datos-contacto {
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.nombre-contacto {
+    margin: 0 0 5px;
+    font-weight: bold;
+}
+
+.telefono-contacto {
+    margin: 0;
+    color: #68736f;
+    font-size: 14px;
+}
+
+.boton-eliminar {
+    flex-shrink: 0;
+    padding: 8px 11px;
+    background-color: #b94b4b;
+}
+
+.boton-eliminar:hover {
+    background-color: #983939;
+}
+
+.mensaje-vacio {
+    margin: 28px 0;
+    color: #77817d;
+    font-size: 14px;
+    text-align: center;
+}
+
+.pie {
+    margin-top: 20px;
+    padding-top: 12px;
+    border-top: 1px solid #edf0ee;
+    color: #68736f;
+    font-size: 14px;
+}
+
+.pie p {
+    margin: 0;
+}
+
+@media (max-width: 420px) {
+    .contenedor {
+        padding: 18px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+}
